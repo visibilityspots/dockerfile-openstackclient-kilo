@@ -17,7 +17,6 @@ RUN set -x \
 		python-openstackclient \
 		python-saharaclient \
 		python-troveclient \
-		python-zaqarclient \
-	&& echo "source /root/keystonerc" | tee -a ~/.bashrc
+		python-zaqarclient
 
-CMD ["bash"]
+CMD ["bash", "--rcfile", "/root/keystonerc"]
