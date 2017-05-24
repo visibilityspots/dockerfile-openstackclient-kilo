@@ -19,7 +19,7 @@ Openstack provides a keystonerc file containing some environment variables to co
 
 You could copy over that keystonerc file to the container source it and use the tools after you've started it or you could provide the file through the volume option and the file will get sourced immediately if using the correct path;
 
-```docker run --name openstack-client --rm -ti -v $(pwd)/keystonerc_admin:/root/keystonerc visibilityspots/openstackclient-kilo```
+```docker run --name openstack-client --rm -ti -v $(pwd)/keystonerc_admin:/home/client/.keystonerc visibilityspots/openstackclient-kilo```
 
 ## License
 Distributed under the MIT license
