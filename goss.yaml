@@ -1,0 +1,37 @@
+package:
+  rdo-release-kilo-2:
+    installed: true
+  python-novaclient:
+    installed: true
+  python-ceilometerclient:
+    installed: true
+  python-cinderclient:
+    installed: true
+  python-glanceclient:
+    installed: true
+  python-heatclient:
+    installed: true
+  python-ironicclient:
+    installed: true
+  python-keystoneclient:
+    installed: true
+  python-manilaclient:
+    installed: true
+  python-novaclient:
+    installed: true
+  python-openstackclient:
+    installed: true
+  python-saharaclient:
+    installed: true
+  python-troveclient:
+    installed: true
+  python-zaqarclient:
+    installed: true
+
+file:
+  /home/client/:
+    exists: true
+
+command:
+  openstack --version:
+    exit-status: 0
