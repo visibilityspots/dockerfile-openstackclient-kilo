@@ -4,11 +4,9 @@
 
 Run the openstackclient tools for the [kilo](https://www.openstack.org/software/kilo/) release in a [Docker](http://docker.io/) container.
 
-Link: [visibilityspots/openstackclient-kilo](https://registry.hub.docker.com/u/visibilityspots/openstackclient-kilo/)
-
 At one of our customers we are running an openstack private cloud based on the [rdo](https://www.rdoproject.org/) kilo release. Because those client tools on my [Archlinux](https://www.archlinux.org/) machine are latest greatest I had some troubles from time to time to get them working with this rather ancient version in openstack terms.
 
-Therefor I opted to set up a docker container from within I could pinpoint the version of those client tools instead and run the tools from within that container.
+Therefore I opted to set up a docker container from within I could pinpoint the version of those client tools instead and run the tools from within that container.
 
 ## Run
 
@@ -25,7 +23,7 @@ You could copy over that keystonerc file to the container source it and use the 
 
 ## Test
 
-I wrote some tests in a goss.yaml file which can be excecuted by [dgoss](https://github.com/aelsabbahy/goss/tree/master/extras/dgoss)
+I wrote some tests in a goss.yaml file which can be executed by [dgoss](https://github.com/aelsabbahy/goss/tree/master/extras/dgoss)
 
 ```
 dgoss  run --name openstack-client-dgoss --rm -ti -v $(pwd)/keystonerc_admin:/home/client/.keystonerc visibilityspots/openstackclient-kilo
