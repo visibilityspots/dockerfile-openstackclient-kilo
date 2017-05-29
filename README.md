@@ -21,5 +21,38 @@ You could copy over that keystonerc file to the container source it and use the 
 
 ```docker run --name openstack-client --rm -ti -v $(pwd)/keystonerc_admin:/home/client/.keystonerc visibilityspots/openstackclient-kilo```
 
+## Test
+
+I wrote some tests in a goss.yaml file which can be excecuted by [dgoss](https://github.com/aelsabbahy/goss/tree/master/extras/dgoss)
+
+```
+dgoss  run --name openstack-client-dgoss --rm -ti -v $(pwd)/keystonerc_admin:/home/client/.keystonerc visibilityspots/openstackclient-kilo
+INFO: Starting docker container
+INFO: Container ID: 539f6896
+INFO: Sleeping for 0.2
+INFO: Running Tests
+File: /home/client/.keystonerc: exists: matches expectation: [true]
+Package: python-cinderclient: installed: matches expectation: [true]
+Package: python-ironicclient: installed: matches expectation: [true]
+Package: python-manilaclient: installed: matches expectation: [true]
+Package: rdo-release-kilo-2: installed: matches expectation: [true]
+Package: python-novaclient: installed: matches expectation: [true]
+Package: python-saharaclient: installed: matches expectation: [true]
+Package: python-zaqarclient: installed: matches expectation: [true]
+Package: python-glanceclient: installed: matches expectation: [true]
+Package: python-troveclient: installed: matches expectation: [true]
+Package: python-heatclient: installed: matches expectation: [true]
+Package: python-keystoneclient: installed: matches expectation: [true]
+Package: python-ceilometerclient: installed: matches expectation: [true]
+Package: python-openstackclient: installed: matches expectation: [true]
+Command: openstack --version: exit-status: matches expectation: [0]
+
+
+Total Duration: 0.786s
+Count: 15, Failed: 0, Skipped: 0
+INFO: Deleting container
+
+```
+
 ## License
 Distributed under the MIT license
