@@ -20,4 +20,4 @@ RUN set -x \
 
 USER client
 
-CMD ["bash", "--rcfile", "/home/client/.keystonerc"]
+ENTRYPOINT ["bash", "--rcfile", "/home/client/.keystonerc"]
