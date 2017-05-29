@@ -1,5 +1,7 @@
 # openstackclient-kilo
 
+[![Build Status](https://travis-ci.org/visibilityspots/dockerfile-openstackclient-kilo.svg?branch=master)](https://travis-ci.org/visibilityspots/dockerfile-openstackclient-kilo)
+
 Run the openstackclient tools for the [kilo](https://www.openstack.org/software/kilo/) release in a [Docker](http://docker.io/) container.
 
 Link: [visibilityspots/openstackclient-kilo](https://registry.hub.docker.com/u/visibilityspots/openstackclient-kilo/)
