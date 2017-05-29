@@ -7,7 +7,7 @@ before_install:
 script:
 - dgoss run --name openstack-client -ti visibilityspots/openstackclient-kilo
 after_success:
-- if [ "$TRAVIS_BRANCH" == "master" ]; then docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
+- if [ "$TRAVIS_BRANCH" == "master" ]; then docker login -u=visibilityspots -p="$DOCKER_PASSWORD";
   docker push visibilityspots/openstackclient-kilo; fi
 env:
   global:
