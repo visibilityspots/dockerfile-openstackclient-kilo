@@ -1,6 +1,7 @@
 FROM centos:7
 RUN set -x \
 	&& yum upgrade -y \
+	&& yum install -y bash-completion \
         && yum install -y https://repos.fedorapeople.org/repos/openstack/EOL/openstack-kilo/rdo-release-kilo-2.noarch.rpm \
 	&& yum install -y python-novaclient \
 	&& yum install -y python-ceilometerclient \
