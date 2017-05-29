@@ -5,7 +5,6 @@ before_install:
 - curl -L https://goss.rocks/install | sudo sh
 - docker build -t visibilityspots/openstackclient-kilo .
 script:
-- dgoss
 - dgoss run --name openstack-client -ti visibilityspots/openstackclient-kilo
 after_success:
 - if [ "$TRAVIS_BRANCH" == "master" ]; then docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
