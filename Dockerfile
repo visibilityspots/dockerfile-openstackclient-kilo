@@ -1,4 +1,5 @@
 FROM centos:7
+LABEL author="Jan Collijs"
 RUN set -x \
 	&& yum upgrade -y \
 	&& yum install -y bash-completion \
