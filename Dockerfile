@@ -3,7 +3,7 @@ LABEL author="Jan Collijs"
 RUN set -x \
 	&& yum upgrade -y \
 	&& yum install -y bash-completion \
-        && yum install -y https://repos.fedorapeople.org/repos/openstack/EOL/openstack-kilo/rdo-release-kilo-2.noarch.rpm \
+        && yum install -y http://vault.centos.org/centos/7.3.1611/cloud/x86_64/openstack-kilo/centos-release-openstack-kilo-1-2.el7.noarch.rpm \
 	&& yum install -y python-novaclient \
 	&& yum install -y python-ceilometerclient \
 	&& yum install -y python-cinderclient \
