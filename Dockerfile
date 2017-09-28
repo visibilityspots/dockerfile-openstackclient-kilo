@@ -4,7 +4,6 @@ LABEL author="Jan Collijs"
 COPY CentOS-OpenStack-Kilo.repo /etc/yum.repos.d/CentOS-OpenStack-Kilo.repo
 
 RUN set -x \
-	&& yum install -y upgrade -y \
 	&& yum install -y bash-completion \
 	&& yum install -y python-novaclient \
 	&& yum install -y python-ceilometerclient \
