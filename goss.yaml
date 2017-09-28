@@ -1,8 +1,6 @@
 package:
   bash-completion:
     installed: true
-  rdo-release-kilo-2:
-    installed: true
   python-novaclient:
     installed: true
   python-ceilometerclient:
