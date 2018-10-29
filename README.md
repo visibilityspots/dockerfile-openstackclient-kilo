@@ -1,6 +1,6 @@
 # openstackclient-kilo
 
-[![Build Status](https://travis-ci.org/visibilityspots/dockerfile-openstackclient-kilo.svg?branch=master)](https://travis-ci.org/visibilityspots/dockerfile-openstackclient-kilo)
+[![Build Status](https://travis-ci.org/visibilityspots/dockerfile-openstackclient-kilo.svg?branch=master)](https://travis-ci.org/visibilityspots/dockerfile-openstackclient-kilo) [![Anchore Image Overview](https://anchore.io/service/badges/image/0fea337a53ced89828498a5646724abfbf76dd662d22f86689c309bc95a2aaef)](https://anchore.io/image/dockerhub/visibilityspots%2Fopenstackclient-kilo%3Alatest)
 
 Run the openstackclient tools for the [kilo](https://www.openstack.org/software/kilo/) release in a [Docker](http://docker.io/) container.
 
